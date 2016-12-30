@@ -1,0 +1,61 @@
+{{ page.content }}    
+
+<div class="brands-container">
+
+    <div class="brands">
+
+        <!-- First cell to take you to 'collections/all to display all products' -->
+       
+        <div class="all-products">
+
+            <img src="path-to-your-brand-logo">
+
+            <h3>
+                <a href="www.your-shopify-url.com/collections/all">All Products</a>
+            </h3>
+
+        </div>
+
+        <!-- Begin brand loop -->
+       
+        {% for collection in collections %}
+
+            {% for product_vendor in shop.vendors %}
+
+                {% if collection.title == product_vendor %}
+
+                    {% assign brand = product_vendor %}
+
+        <div>
+
+                    {% if collection.image %}
+                    
+            <!-- Use collection image as background if available -->
+         
+            <img src="{{ collection.image | img_url: 'medium' }}">
+
+                    {% else %}
+
+            <!-- Else use a default background image -->
+         
+            <img class="brands-default-image" src="https://cdn.shopify.com/s/files/1/0665/3943/files/image_coming_soon.png?8417244584693878788">
+
+                    {% endif %}
+
+            <!-- On click, send to collection url -->
+           
+            <h3>
+                <a href="{{shop.url}}/collections/{{ collection.handle }}">{{ product_vendor }}</a>
+            </h3>
+
+        </div>
+
+                {% endif %}
+
+            {% endfor %}
+
+        {% endfor %}  
+
+    </div>
+
+</div>

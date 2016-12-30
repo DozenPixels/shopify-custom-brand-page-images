@@ -1,0 +1,126 @@
+div.brands-container {
+    width: 244px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.brands {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+
+div.brands div {
+    float: left;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: table;
+    position: relative;
+    background-color: #DBE3E8;
+}
+
+div.brands div.all-products {
+    background-color: #8799a2;
+    border-radius: 5px;
+}
+
+div.brands div.all-products img {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 190px;
+    height: 190px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+div.brands div.all-products h3 a {
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #6B7D86 !important;
+    border: 5px solid #DBE3E8;
+    border-radius: 5px;
+}
+
+div.brands div.all-products h3 {
+    display: table-cell;
+    vertical-align: bottom;
+    line-height: 180px;
+    color: #6B7D86;
+}
+
+div.brands div:hover {
+    background-color: transparent;
+}
+
+div.brands div h3 a:hover {
+    color: #8799A2 !important;
+    border: 5px solid #8799A2;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+div.brands div h3 {
+    display: table-cell;
+    vertical-align: bottom;
+    line-height: 350px;
+}
+
+div.brands div img {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+div.brands div h3 a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 1) !important;
+    border: 5px solid #DBE3E8;
+    border-radius: 5px;
+}
+
+img.brands-default-image {
+    opacity: 0.6;
+}
+
+img.brands-default-image:hover {
+    opacity: 1;
+}
+
+@media (min-width: 1024px) {
+    div.brands-container {
+        width: 964px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+    div.brands-container {
+        width: 724px;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 799px) {
+    div.brands-container {
+        width: 484px;
+    }
+}
+
+@media (max-width: 519px) {
+    div.brands-container {
+        width: 244px;
+    }
+}
