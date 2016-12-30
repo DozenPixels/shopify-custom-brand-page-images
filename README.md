@@ -1,4 +1,4 @@
-##**Shopify** - CUstome Brand Page with Hover Images
+##**Shopify** - Custom Brand Page with Hover Images
 
 SHopify does not natively support a page listing all brands, only collections. This is a workaround, requiring you to make a custom page template.
 
